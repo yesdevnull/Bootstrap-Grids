@@ -10,14 +10,24 @@ module.exports = function(grunt) {
 					dest: 'dist/bootstrap-grids.css'
 				}]
 			},
-			dist: {
+			dist_normal: {
 				options: {
 					sourcemap: 'none',
 					style: 'compressed'
 				},
 				files: [{
 					src: 'src/bootstrap-grid.scss',
-					dest: 'dist/bootstrap-grids.min.css'
+					dest: 'dist/bootstrap-grid.min.css'
+				}]
+			},
+			dist_scss: {
+				options: {
+					sourcemap: 'none',
+					style: 'compressed'
+				},
+				files: [{
+					src: 'src/bootstrap-grid.scss',
+					dest: 'dist/_bootstrap-grids.scss'
 				}]
 			}
 		}
