@@ -35,5 +35,5 @@ module.exports = function(grunt) {
 	
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	
-	grunt.registerTask('build', ['sass:dist']);
+	grunt.registerTask('build', ['sass']);
 }
